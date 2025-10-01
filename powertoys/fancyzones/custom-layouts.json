@@ -1,0 +1,78 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "{0EBE9DB3-6F35-4EA0-A170-8B2A0AFF19B3}",
+      "name": "Coding Primary",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 2,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          3318,
+          6682
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 11,
+        "sensitivity-radius": 95
+      }
+    },
+    {
+      "uuid": "{B4B8FDF3-C419-4CCA-B29F-3B0C9E9E0288}",
+      "name": "Split",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 2,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          4999,
+          5001
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 11,
+        "sensitivity-radius": 95
+      }
+    },
+    {
+      "uuid": "{079C9D85-848B-45D6-B1C8-8AC3C72BBBD7}",
+      "name": "Full",
+      "type": "canvas",
+      "info": {
+        "ref-width": 3440,
+        "ref-height": 1440,
+        "zones": [
+          {
+            "X": 21,
+            "Y": 17,
+            "width": 3400,
+            "height": 1408
+          },
+          {
+            "X": 16,
+            "Y": 14,
+            "width": 3408,
+            "height": 1412
+          }
+        ],
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

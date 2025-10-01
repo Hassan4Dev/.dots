@@ -1,0 +1,89 @@
+/* =============== SCROLLBARS ==================== */
+.scrollbar.vertical .slider {
+  cursor: pointer;
+  position: absolute !important;
+  right: 5px !important;
+  width: 4px !important;
+  background: #696c78 !important;
+  left: auto !important;
+  border-radius: 3px;
+}
+
+.scrollbar.horizontal .slider {
+  position: absolute !important;
+  bottom: 5px !important;
+  height: 4px !important;
+  background: #343a51 !important;
+  top: auto !important;
+  border-radius: 3px;
+}
+
+.decorationsOverviewRuler {
+  display: none !important;
+}
+
+/* =================================== */
+/* ================ FONT FAMILY =================== */
+
+.search-label {
+  font-family: "Cascadia Code" !important;
+}
+
+.statusbar {
+  font-family: "Cascadia Code" !important;
+}
+
+.label-name {
+  font-family: "Cascadia Code" !important;
+  /* font-family: "JetBrainsMono Nerd Font" !important; */
+}
+
+/* =================================== */
+/* ========= COMMAND PALETTE ============ */
+
+.quick-input-widget {
+  transform: translateY(-50%) translateX(-50%) !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 900px !important;
+  padding: 0 !important;
+  background-color: rgb(30, 30, 30) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 0 0 100vw rgba(0, 0, 0, 0.309) !important;
+}
+
+.quick-input-widget .monaco-inputbox {
+  padding: 10px !important;
+  border-radius: 10px !important;
+}
+
+/* ========= UI ============ */
+
+.title-actions {
+  display: none !important;
+}
+
+.title-label h2 {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  color: rgb(0, 0, 0, 0) !important;
+}
+
+.title-label h2::before {
+  display: flex !important;
+  content: "" !important;
+  background-image: url("https://code.visualstudio.com/assets/images/code-stable.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 8px !important;
+}
+
+.title.tabs .editor-actions .actions-container {
+  display: none;
+}
+
+/* =================================== */
