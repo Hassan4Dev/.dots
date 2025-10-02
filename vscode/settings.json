@@ -569,7 +569,7 @@
       {
         "name": "String, Symbols, Inherited Class",
         "scope": [
-          "string",
+          "string.quoted.double.json.comments",
           "constant.other.symbol",
           "constant.other.key",
           "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
@@ -582,6 +582,8 @@
         "name": "Class, Support",
         "scope": [
           "entity.name",
+          "constant.language.null",
+          "constant.language.undefined",
           "support.type",
           "support.class",
           "support.other.namespace.use.php",
@@ -1131,6 +1133,7 @@
       {
         "name": "String Literals in TypeScript/JavaScript",
         "scope": [
+          "string",
           "meta.object-literal.key string.quoted.single.ts",
           "meta.object-literal.key string.quoted.double.ts",
           "meta.object-literal.key string.quoted.single.js",
@@ -1215,5 +1218,8 @@
     "trpc-server": "folder_proto",
     "trpc-client": "folder_proto"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  }
 }
