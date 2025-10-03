@@ -1,5 +1,4 @@
 adpyke.vscode-sql-formatter
-antiantisepticeye.vscode-color-picker
 be5invis.vscode-custom-css
 biomejs.biome
 bradlc.vscode-tailwindcss

@@ -1,3 +1,18 @@
+/* =============== DRAGGABLE ELEMENTS ==================== */
+.monaco-workbench:not(.fullscreen) .activitybar,
+.monaco-workbench:not(.fullscreen) .statusbar,
+.monaco-workbench:not(.fullscreen) .tabs-container,
+.monaco-workbench:not(.fullscreen) .sidebar .composite.title {
+  -webkit-app-region: drag;
+}
+
+.monaco-workbench:not(.fullscreen) .activitybar .content .monaco-action-bar,
+.monaco-workbench:not(.fullscreen) .statusbar .statusbar-item,
+.monaco-workbench:not(.fullscreen) .tabs-container .tab,
+.monaco-workbench:not(.fullscreen) .sidebar .composite.title .title .title-actions .action-label {
+  -webkit-app-region: no-drag;
+}
+
 /* =============== SCROLLBARS ==================== */
 .scrollbar.vertical .slider {
   cursor: pointer;
@@ -22,33 +37,18 @@
   display: none !important;
 }
 
-/* =================================== */
 /* ================ FONT FAMILY =================== */
-
-.search-label {
-  font-family: "Cascadia Code" !important;
+.monaco-text-button,
+.search-label,
+.statusbar,
+.label-name,
+.token-inspect-widget {
+  font-family: "Lexend" !important;
 }
 
-.statusbar {
-  font-family: "Cascadia Code" !important;
-}
-
-.label-name {
-  font-family: "Cascadia Code" !important;
-  /* font-family: "JetBrainsMono Nerd Font" !important; */
-}
-
-/* =================================== */
 /* ========= COMMAND PALETTE ============ */
-
 .quick-input-widget {
-  transform: translateY(-50%) translateX(-50%) !important;
-  position: fixed !important;
-  top: 50% !important;
-  left: 50% !important;
-  width: 900px !important;
   padding: 0 !important;
-  background-color: rgb(30, 30, 30) !important;
   border-radius: 10px !important;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 0 0 100vw rgba(0, 0, 0, 0.309) !important;
 }
@@ -59,31 +59,35 @@
 }
 
 /* ========= UI ============ */
-
 .title-actions {
   display: none !important;
 }
 
-.title-label h2 {
-  display: flex !important;
-  align-items: center !important;
-  font-weight: 600 !important;
-  color: rgb(0, 0, 0, 0) !important;
-}
-
-.title-label h2::before {
-  display: flex !important;
-  content: "" !important;
-  background-image: url("https://code.visualstudio.com/assets/images/code-stable.png") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  width: 16px !important;
-  height: 16px !important;
-  margin-right: 8px !important;
-}
-
 .title.tabs .editor-actions .actions-container {
-  display: none;
+  display: none !important;
 }
 
-/* =================================== */
+#workbench\.parts\.sidebar .composite.title {
+  display: none !important;
+}
+
+.tabs-container {
+  padding: 5px 0 !important;
+}
+
+.sidebar {
+  height: 100% !important;
+}
+
+.sidebar .content {
+  height: 100% !important;
+  padding: 8px 0 !important;
+}
+
+.sidebar .content .split-view-view {
+  height: 100% !important;
+}
+
+.codicon-settings-edit {
+  display: none !important;
+}
