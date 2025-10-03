@@ -1,0 +1,19 @@
+{
+  "name": "minimal-theme",
+  "displayName": "Minimal Theme",
+  "description": "A super minimal custom theme.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Minimal Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/minimal-theme.json"
+      }
+    ]
+  }
+}
