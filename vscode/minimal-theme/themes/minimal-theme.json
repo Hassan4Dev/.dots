@@ -29,7 +29,8 @@
     "activityBar.background": "#121217ff",
     "activityBar.foreground": "#868F97",
 
-    "tab.activeBackground":  "#121217ff",
+    "tab.activeBorder": "#00d9ffc0",
+    "tab.activeBackground": "#121217ff",
     "tab.inactiveBackground": "#121217ff",
     "tab.activeForeground": "#E6E6E6",
     "tab.inactiveForeground": "#4c4d55ff",
@@ -57,10 +58,8 @@
     "terminal.ansiYellow": "#E6E7A3",
     "terminal.ansiCyan": "#A3D4E7",
 
-    "gitDecoration.modifiedResourceForeground": "#ffb300c9",
-    "gitDecoration.untrackedResourceForeground": "#00d9ffc0",
-    "gitDecoration.conflictingResourceForeground": "#FF5C5C",
-    "gitDecoration.deletedResourceForeground": "#FF5C5C",
+    "gitDecoration.modifiedResourceForeground": "#FFF",
+    "gitDecoration.untrackedResourceForeground": "#FFF",
 
     "quickInput.background": "#121217ff",
     "quickInput.foreground": "#E6E6E690",
@@ -74,6 +73,9 @@
     {
       "scope": [
         "string",
+        "string.template",
+        "meta.tag.attributes string",
+        "meta.tag.attributes punctuation.definition.string",
         "punctuation.definition.string",
         "meta.object.member string",
         "meta.object.member punctuation.definition.string"
@@ -85,6 +87,7 @@
         "variable",
         "variable.property",
         "support.type.property-name",
+        "support.variable.property",
         "constant.language.import-export-all",
         "meta.import string",
         "meta.import punctuation.definition.string",
@@ -108,7 +111,8 @@
         "keyword",
         "punctuation",
         "meta.brace",
-        "entity.other"
+        "entity.other",
+        "variable.language.this"
       ],
       "settings": { "foreground": "#9099A1" }
     },
@@ -123,7 +127,7 @@
     },
     {
       "scope": ["comment", "punctuation.definition.comment"],
-      "settings": { "foreground": "#46474F"}
+      "settings": { "foreground": "#46474F" }
     }
   ]
 }
