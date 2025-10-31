@@ -1,6 +1,4 @@
 {
-  "workbench.colorCustomizations": {},
-
   // Workbench
   "workbench.settings.editor": "json",
   "workbench.panel.defaultLocation": "right",
@@ -12,7 +10,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 10,
-  "workbench.statusBar.visible": false,
+  "workbench.editor.labelFormat": "short",
 
   // Windows
   "window.menuBarVisibility": "toggle",
@@ -21,15 +19,20 @@
   "window.menuStyle": "custom",
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
-  "window.density.editorTabHeight": "compact",
+  "window.density.editorTabHeight": "default",
+
+  // Inlay Hints
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
 
   // Editor Core Settings
-  "editor.cursorSurroundingLines": 20,
+  "editor.cursorSurroundingLines": 10,
   "editor.linkedEditing": false,
   "editor.lineNumbers": "relative",
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
   "editor.defaultColorDecorators": "always",
   "editor.bracketPairColorization.enabled": true,
   "editor.stickyScroll.enabled": false,
@@ -38,19 +41,20 @@
   "editor.inlayHints.enabled": "on",
   "editor.inlayHints.fontSize": 10,
   "editor.lineHeight": 2,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
+  "editor.fontWeight": 500,
   "editor.fontLigatures": false,
   "editor.snippetSuggestions": "none",
   "editor.semanticHighlighting.enabled": false,
   "editor.minimap.enabled": false,
-  "typescript.referencesCodeLens.enabled": true,
+  "editor.guides.indentation": false,
   "scm.diffDecorationsGutterWidth": 1,
   "scm.diffDecorationsGutterVisibility": "hover",
 
   // Font Family Settings
-  "editor.fontFamily": "Cascadia Code, monospace",
-  "editor.inlineSuggest.fontFamily": "Cascadia Code, monospace",
-  "terminal.integrated.fontFamily": "Cascadia Code, monospace",
+  "editor.fontFamily": "Geist Mono Variable",
+  "editor.inlineSuggest.fontFamily": "Geist Mono Variable",
+  "terminal.integrated.fontFamily": "Geist Mono Variable",
   "markdown.preview.fontFamily": "Lexend",
   "editor.codeLensFontFamily": "Lexend",
   "editor.inlayHints.fontFamily": "Lexend",
@@ -58,6 +62,20 @@
   "gitlens.blame.fontFamily": "Lexend",
   "gitlens.currentLine.fontFamily": "Lexend",
   "scm.inputFontFamily": "Lexend",
+
+  // Chat
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.agent.maxRequests": 50,
+  "chat.fontFamily": "Lexend",
+  "chat.editor.fontFamily": "Lexend",
+  "chat.editing.autoAcceptDelay": 0,
+  "chat.tools.edits.autoApprove": {
+    "**/*": true,
+    "**/.vscode/*.json": false,
+    "**/.git/**": false,
+    "**/{package.json,package-lock.json,server.xml,build.rs,web.config,.gitattributes,.env}": false,
+    "**/*.{csproj,fsproj,vbproj}": false
+  },
 
   // Files and Explorer Settings
   "explorer.compactFolders": false,
@@ -263,8 +281,6 @@
   "redhat.telemetry.enabled": false,
   "typescript.tsserver.log": "off",
   "biome.suggestInstallingGlobally": false,
-  "typescript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterNames.enabled": "all",
   "codeium.enableCodeLens": false,
 
   // ======== VISUAL CHANGES ========
@@ -277,7 +293,10 @@
   "catppuccin-icons.associations.folders": {
     "mailer": "folder_messages",
     "trpc-server": "folder_proto",
-    "trpc-client": "folder_proto"
+    "trpc-client": "folder_proto",
+    "stores": "folder_content",
+    "features": "folder_examples",
+    "certs": "folder_templates",
   },
 
   // Language-specific formatters
@@ -289,5 +308,9 @@
   },
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": false,
 }
