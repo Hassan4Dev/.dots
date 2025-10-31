@@ -14,6 +14,10 @@ This is for my theme, keybindings, and settings.json. I should probably publish 
 
 ![Theme Screenshot](./vscode/theme.png)
 
+#### Requirements
+
+Fonts required: Geist Mono Variable, and Lexend.
+
 #### Note on theme
 
 It's not perfect. I made a minimal theme myself with the tokens geared towards JS/TS/React development. It may look bad in other languages, idk.
